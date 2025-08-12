@@ -1,0 +1,100 @@
+body {
+  background-image: url("image.jfif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container {
+  border: 1px solid rgb(160, 149, 149);
+  background-color: rgb(214, 224, 224);
+  border-radius: 10px;
+  width: 300px;
+  height: 15pc;
+  justify-self: center;
+  margin-top: 15%;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px rgb(153, 140, 123) inset;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 10px 0px 7px 0px;
+}
+
+.subhead {
+  color: rgb(83, 79, 79);
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: large;
+  margin: 10px 5px 15px 5px;
+}
+
+.bar {
+  font-size: x-large;
+  padding: 7px 0px 7px 5px;
+  width: 70%;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 0cap;
+  box-shadow: 1px 1px 1px 1px rgb(133, 160, 160) inset;
+  color: dodgerblue;
+}
+
+button {
+  margin: 10px;
+  color: rgb(46, 65, 100);
+  font-family: sans-serif;
+  word-spacing: 5px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgb(64, 65, 70);
+  border-radius: 10px;
+  border: 0cap;
+  box-shadow: 1px 1px 1px 1px rgb(48, 40, 40);
+}
+
+button:hover {
+  background-color: rgb(54, 53, 83);
+  color: antiquewhite;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out,
+    border 0.5s ease-in-out;
+  border: 0.1em solid #f00;
+}
+
+button:active {
+  transform: scale(97%);
+}
+
+.message {
+  color: rgb(109, 117, 114);
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+  font-size: large;
+}
+
+.message.error {
+  color: #f00;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.date {
+  display: flex;
+  background-color: rgb(199, 203, 212);
+  margin: 5px;
+}
+
+.bar.error {
+  border: 2px solid red;
+  color: #f00;
+}
+
+
