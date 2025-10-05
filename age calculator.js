@@ -1,5 +1,11 @@
 document.getElementById("button").addEventListener("click", displayDate);
 
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    displayDate();
+  }
+});
+
 const current = new Date();
 
 const currentMonth = current.getMonth();
@@ -43,9 +49,9 @@ function displayDate() {
   } else if (getMonth < currentMonth) {
     messageDisplay("message4");
   } else if (getMonth === currentMonth && getYear === currentYear) {
-    messageDisplay("message2");
+    messageDisplay("message7");
     errorMessage();
-    setTimeout(removeError, 1000);
+    setTimeout(removeError, 2000);
   } else {
     messageDisplay("message6");
     errorMessage();
@@ -71,6 +77,8 @@ function displayDate() {
       messageBox.textContent = "You are " + monthDiff + " month(s) old.";
     } else if (key === "message6") {
       messageBox.textContent = "Please select a date";
+    } else if (key === "message7") {
+      messageBox.textContent = "You are less than a month old";
     }
   }
 }
